@@ -27,10 +27,15 @@ Link : https://github.com/Nuitka/Nuitka
    Begin by installing Nuitka via pip: pip install nuitka
 
 ### 2. **Compiling Python Code:**
-Using Nuitka to compile Python code involves a simple command: nuitka --standalone your_script.py
-Using Nuitka to compile PyQt5 code involves a simple command: nuitka --standalone --enable-plugin=pyqt5 --include-qt-plugins=. main.py --windows-disable-console --windows-icon-from-ico=favicon.ico
-
-Replace `your_script.py` with the main Python script file of your project. The `--standalone` flag generates a standalone executable without external dependencies.
+Using Nuitka to compile Python code involves a simple command: 
+```
+nuitka --standalone main.py
+```
+Using Nuitka to compile PyQt5 code involves a simple command: 
+```
+nuitka --standalone --enable-plugin=pyqt5 --include-qt-plugins=. main.py --windows-disable-console --windows-icon-from-ico=favicon.ico
+```
+Replace `main.py` with the main Python script file of your project. The `--standalone` flag generates a standalone executable without external dependencies.
 
 ### 3. **Options and Optimization:**
 Nuitka offers various options for optimization and customization. For instance:
